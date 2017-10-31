@@ -478,6 +478,7 @@ footer {
   flex-direction: column;
   width: 80%;
   height: auto;
+  margin: auto;
 }
 
 #page2 .blockblack {
@@ -493,6 +494,28 @@ footer {
   width: 100%;
   height: auto;
 }
+.blockhobby {
+  width: 100%;
+  height: auto;
+}
+
+.blockblack#pers {
+  background-color:rgba(255, 215, 0, 0.85);
+
+}
+
+.blockblack#pers .persoonlijk{
+  color: black;
+}
+
+.blockyellow#werk .werkervaring{
+  color: white;
+}
+.blockyellow#werk {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+}
+
 
 @media screen and (max-width: 739px) {
 
