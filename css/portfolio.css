@@ -15,7 +15,7 @@
     display: flex;
     position: fixed;
     right: 20px;
-    top:20px;
+    top:15px;
     display: inline-block;
     cursor: pointer;
     visibility: hidden;
@@ -562,6 +562,13 @@ footer {
     opacity: 0;
   }
 
+  ul li a i {
+    padding: 17px 0px 0px 40px;
+  }
+
+  #briefcase {
+  padding-right: 90px;
+}
   .iconx {
     visibility: visible;
   }
