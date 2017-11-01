@@ -13,7 +13,7 @@
 /*nav icon xmobile*/
 .iconx {
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 20px;
     top:15px;
     display: inline-block;
@@ -397,7 +397,7 @@ footer {
   width: 80%;
   height: auto;
   color: black;
-  background-color:rgba(255, 215, 0, 0.6);
+  background-color:rgba(255, 215, 0, 0.85);
 }
 
 #machinnovap {
@@ -413,7 +413,7 @@ footer {
   width: 80%;
   height: auto;
   color: black;
-  background-color:rgba(255, 215, 0, 0.6);
+  background-color:rgba(255, 215, 0, 0.85);
 }
 
 
@@ -569,6 +569,7 @@ footer {
   #briefcase {
   padding-right: 90px;
 }
+
   .iconx {
     visibility: visible;
   }
@@ -610,6 +611,24 @@ footer {
 .container #kp {
   width: 100%;
   font-size: 20px;
+}
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 60px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:rgba(255, 255, 255, 0.5); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 }
