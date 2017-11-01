@@ -439,6 +439,7 @@ footer {
   margin-top: -22px;
   padding: 16px;
   color: white;
+  background-color:rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -459,22 +460,14 @@ footer {
 /* Caption text */
 .text {
   color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 8px 0px;
   font-family: 'Raleway', sans-serif;
   position: absolute;
   bottom: 40px;
   width: 100%;
   text-align: center;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  font-family: 'Raleway', sans-serif;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 .dot {
@@ -508,6 +501,62 @@ footer {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.opdrachtinfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.layoutinfo {
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vlootinfo {
+  background-color:rgba(255, 215, 0, 0.85);
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.gridinfo {
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.meerinfo {
+  background-color:rgba(255, 215, 0, 0.85);
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-bottom: 70px;
+}
+
+.infolink {
+  color: white;
+  text-decoration: none;
+}
+
+.infolink:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.infolink:active {
+  color: black;
+}
+
+/*------------------------------------*/
 
 @media screen and (max-width: 1006px) {
 
