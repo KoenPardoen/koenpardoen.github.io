@@ -307,7 +307,9 @@ span #active{
 }
 
 #PF {
-  width: 40%;
+  float: right;
+  border-radius: 5px;
+  width: 150px;
   height: auto;
 }
 
@@ -328,21 +330,11 @@ article {
   margin: auto;
 }
 
-
-.persoonlijk {
-  color: white;
-  width: 60%;
-}
-
-.werkervaring {
+.wiebeniky {
   color: black;
 }
 
-.opleidingen {
-  color: black;
-  }
-
-.vaardigheden {
+.wiebenikb {
   color: white;
 }
 
@@ -692,4 +684,11 @@ footer {
   width: 100%;
   text-align: center;
 }
+}
+
+@media screen and (max-width: 739px) {
+  #PF {
+    float: none;
+    margin: auto;
+  }
 }
