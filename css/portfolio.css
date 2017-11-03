@@ -298,6 +298,18 @@ li{
 
 /*over mij pagina*/
 
+#myBtn {
+  display: none;
+}
+
+#myBtn:hover {
+    display: none;
+}
+/*text slideshow*/
+.text {
+  display: none;
+}
+
 span #active{
   color: black;
 }
@@ -308,9 +320,10 @@ span #active{
 
 #PF {
   float: right;
+  height: auto;
   border-radius: 5px;
   width: 150px;
-  height: auto;
+  height: auto
 }
 
 #vaarcomp {
@@ -330,11 +343,20 @@ article {
   margin: auto;
 }
 
-.wiebeniky {
+
+.persoonlijk {
+  color: white;
+}
+
+.werkervaring {
   color: black;
 }
 
-.wiebenikb {
+.opleidingen {
+  color: black;
+  }
+
+.vaardigheden {
   color: white;
 }
 
@@ -686,9 +708,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 567px) {
   #PF {
     float: none;
-    margin: auto;
   }
-}
