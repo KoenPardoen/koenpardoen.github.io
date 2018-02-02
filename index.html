@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Koen Pardoen</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://use.fontawesome.com/49cd1ca811.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-</head>
-
-<body class="background1">
-  <main id="pagehome">
-    <header>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Startpagina</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="javascript/jsTime.js"></script>
+  </head>
+  <body onload="startTime()">
+    <main>
       <nav>
-        <ul>
-          <li><a href="index.html"><span id="active" class="hoverspan"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span id="homet">Home page</span></span></a></li>
-          <li><a href="wiebenik.html"><span class="hoverspan"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i><span id="overmijt">Over mij</span></a></li>
-          <li><a href="opleiding.html"><span class="hoverspan"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i><span id="projectt">School projecten</span></a></li>
-          <li><a href="beroep.html"><span class="hoverspan"><i  id="briefcase" class="fa fa-briefcase fa-2x" aria-hidden="true"></i><span id="werkt"> Werk</span></a></li>
-        </ul>
+        <div class="link">
+          <a href="https://www.youtube.com/" target="_blank"><img id="youtubeImg" src="img/youtube.png" alt="youtube"></a>
+          <span class="iconInfo">Youtube</span>
+        </div>
+        <div class="link">
+          <a href="https://github.com/davinci-ao17" target="_blank"><img id="gitImg" src="img/git.png" alt="github"></a>
+          <span class="iconInfo">Github</span>
+        </div>
+        <div class="link">
+        <a href="https://www.netflix.com/browse" target="_blank"><img id="netflixImg" src="img/netflix.png" alt="netflix"></a>
+        <span class="iconInfo">Netflix</span>
+        </div>
+        <div class="link">
+        <a href="portfolio/home.html" target="_blank"><img id="KoenPardoenImg" src="img/KPardoen.png" alt="Portfolio"></a>
+        <span class="iconInfo">Portfolio</span>
+        </div>
       </nav>
-      <div class="iconx" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </header>
-
-    <div class="container">
-        <div id="portf"><h1>Portfolio</h1></div>
-        <div id="kp"><h1>Koen Pardoen</h1></div>
+    </main>
+    <div class="exWeb">
+      <iframe id="SoundCloud" width="100%" height="400px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/213762127&amp;color=%23768696&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
     </div>
-
-  </main>
-  <script src="javascript/mobilenav.js" type="text/javascript" charset="utf-8"></script>
-</body>
+    <footer>
+      <div class="footerLeft">
+        <div class="winIco" onclick='menu()'>
+          <img src="img/winIco.png" alt="winLogo">
+        </div>
+        <form action="http://www.google.com/search" target="_blank" method="get">
+          <input id="googleSearch" type="text" name="q" placeholder="search google...">
+        </form>
+      </div>
+      <span id="time"></span>
+    </footer>
+    <script type="text/javascript" src="javascript/script.js"></script>
+    <script type="text/javascript" src="javascript/dragMouse.js"></script>
+  </body>
 </html>
-
-<!--
-<a href="https://github.com/koenpardoen"></a><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-<a href="https://www.linkedin.com/in/koen-pardoen"></a><i class="fa fa-git-square fa-2x" aria-hidden="true"></i>
- -->

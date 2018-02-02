@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+main {
+  margin: 0;
+}
+
+#time {
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  right: 30px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+}
+
+#SoundCloud {
+  bottom:40px;
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 600px;
+}
+
+footer {
+  margin: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#googleSearch {
+  color: red;
+}
+
+.iconInfo {
+  color: white;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.link {
+  position: relative;
+  margin: 30px 30px 50px 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+
+.link img {
+  width: 100%;
+  height: 100%;
+}
+
+.footerLeft {
+  display: flex;
+}
+
+.exWeb {
+  visibility: hidden;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  height: 300px;
+  width: 600px;
+}
+
+.winIco {
+  width: 50px;
+  height: 40px;
+
+}
+
+.winIco img {
+  margin-left: 4px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.searchBox {
+  background-color: red;
+  height: 40px;
+  height: 100px;
+}
+
+#googleSearch {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  height: 38px;
+  width: 300px;
+  font-size: 20px;
+}
