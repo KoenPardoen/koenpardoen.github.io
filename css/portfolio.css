@@ -1,0 +1,718 @@
+/*Home page*/
+
+.background1  {
+  margin: 0;
+  background-image: url(../img/background2.jpeg);
+}
+
+.background2  {
+  margin: 0;
+  background-image: url(../img/background1.jpeg);
+}
+
+/*nav icon xmobile*/
+.iconx {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top:15px;
+    display: inline-block;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/*--------------------------------------------------------------*/
+
+.container #portf {
+    -webkit-animation-name: portf; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: portf;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes portf {
+  0%  {
+    background-color:rgba(255, 215, 0, 0.8);
+    color: black;
+    }
+  25%  {
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 215, 0);
+        }
+  50%   {
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 215, 0);
+        }
+  100%  {
+    background-color:rgba(255, 215, 0, 0.8);
+    color: black;
+    }
+}
+
+/* Standard syntax */
+@keyframes portf {
+  0%  {
+    background-color:rgba(255, 215, 0, 0.8);
+    color: black;
+    }
+  25%  {
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 215, 0);
+        }
+  50%   {
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 215, 0);
+        }
+  100%  {
+    background-color:rgba(255, 215, 0, 0.8);
+    color: black;
+    }
+}
+
+.container #kp {
+    -webkit-animation-name: kp; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: kp;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes kp {
+  0%  {
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 215, 0);
+    }
+  25%  {
+    background-color:rgba(255, 215, 0, 0.8);
+    color: black;
+        }
+  50%   {
+    background-color:rgba(255, 215, 0, 0.8);
+    color: black;
+        }
+  100%  {
+    background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 215, 0);
+    }
+}
+
+/* Standard syntax */
+@keyframes kp {
+    0%  {
+      background-color:rgba(0, 0, 0, 0.5);
+      color:rgb(255, 215, 0);
+      }
+    25%  {
+      background-color:rgba(255, 215, 0, 0.8);
+      color: black;
+          }
+    50%   {
+      background-color:rgba(255, 215, 0, 0.8);
+      color: black;
+          }
+    100%  {
+      background-color:rgba(0, 0, 0, 0.5);
+      color:rgb(255, 215, 0);
+      }
+}
+
+#active i{
+  color:rgb(255, 215, 0);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container #portf {
+  background-color:rgba(220, 220, 220, 0.5);
+  color: Black;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 7px 0px 0px 7px;
+  padding: 20px 20px 20px 30px;
+}
+
+.container #kp {
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 0px 7px 7px 0px;
+  padding: 20px 30px 20px 20px;
+}
+
+}
+
+header {
+  margin:0;
+  height: 70px;
+}
+
+nav {
+  justify-content: flex-end;
+  display: flex;
+  transition: linear .5s
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  height: 70px;
+  line-height: 70px;
+}
+
+
+ul li a i {
+  text-decoration: none;
+  color: white;
+  padding: 0px 25px 0px 20px;
+}
+
+a:hover i{
+  color:rgb(255, 215, 0);
+}
+
+li{
+  position: relative;
+}
+
+.hoverspan i{
+  position: relative;
+}
+
+#homet{
+	display: none;
+
+}
+
+.hoverspan:hover #homet{
+  position: absolute;
+  left:-71px;
+  top: 10px;
+	display: block;
+	background-color: rgba(255, 215, 0, 0.85);
+	width: 75px;
+	border: solid black 1px;
+	border-radius: 5px;
+	height: 30px;
+	padding: 5px;
+	margin: 0;
+	color: black;
+  line-height: 30px;
+}
+
+#overmijt{
+	display: none;
+}
+
+.hoverspan:hover #overmijt{
+  position: absolute;
+  left:-131px;
+  top: 10px;
+	display: block;
+	background-color: rgba(255, 215, 0, 0.85);
+	width: 60px;
+	border: solid black 1px;
+	border-radius: 5px;
+	height: 30px;
+	padding: 5px;
+	margin: 0;
+	color: black;
+  line-height: 30px;
+}
+
+#projectt{
+	display: none;
+}
+
+.hoverspan:hover #projectt{
+  position: absolute;
+	left:-261px;
+  top: 10px;
+	display: block;
+  background-color: rgba(255, 215, 0, 0.85);
+	width: 108px;
+	border: solid black 1px;
+	border-radius: 5px;
+	height: 30px;
+	padding: 5px;
+	margin: 0;
+	color: black;
+  line-height: 30px;
+}
+
+#werkt{
+	display: none;
+}
+
+.hoverspan:hover #werkt{
+  position: absolute;
+  left:-275px;
+  top: 10px;
+	display: block;
+	background-color: rgba(255, 215, 0, 0.85);
+	width: 36px;
+	border: solid black 1px;
+	border-radius: 5px;
+	height: 30px;
+	padding: 5px;
+	margin: 0;
+	color: black;
+  line-height: 30px;
+}
+
+/*over mij pagina*/
+
+#myBtn {
+  display: none;
+}
+
+#myBtn:hover {
+    display: none;
+}
+/*text slideshow*/
+.text {
+  display: none;
+}
+
+span #active{
+  color: black;
+}
+
+#page2  {
+  font-family: 'Raleway', sans-serif;
+}
+
+#PF {
+  float: right;
+  height: auto;
+  border-radius: 5px;
+  width: 150px;
+  height: auto
+}
+
+#vaarcomp {
+  list-style-type: circle;
+}
+
+section{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+article {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  margin: auto;
+}
+
+
+.persoonlijk {
+  color: white;
+}
+
+.werkervaring {
+  color: black;
+}
+
+.opleidingen {
+  color: black;
+  }
+
+.vaardigheden {
+  color: white;
+}
+
+.hobby {
+  color: black;
+}
+
+.blockhobby{
+  margin: 15px 15px 100px 15px;
+  width: 40%;
+  height: auto;
+  background-color:rgba(255, 215, 0, 0.85);
+}
+
+.blockyellow {
+    margin: 15px;
+    width: 40%;
+    height: 300px;
+    background-color:rgba(255, 215, 0, 0.85);
+}
+
+.blockblack {
+  margin: 15px;
+  width: 40%;
+  height: 300px;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  line-height: 61px;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding:0px 10px 0px 10px;
+}
+
+.footerlink{
+  color: white;
+  padding: 3px 5px 3px 5px;
+
+}
+
+/*Beroep pagina*/
+
+.werkzaam {
+  margin: 15px;
+  width: 80%;
+  height: auto;
+  color: black;
+  background-color:rgba(255, 215, 0, 0.85);
+}
+
+#machinnovap {
+  padding-right: 3px 0px 10px 0px
+}
+
+#pardoentechniekp {
+  padding-right: 10px 0px 3px 0px
+}
+
+.plannen {
+  margin: 15px;
+  width: 80%;
+  height: auto;
+  color: black;
+  background-color:rgba(255, 215, 0, 0.85);
+}
+
+
+/*opleiding pagina*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 215, 0, 0.85);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  padding: 8px 0px;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:rgba(255, 215, 0, 0.85);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.s;
+  animation-name: fade;
+  animation-duration: 1.8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.opdrachtinfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.layoutinfo {
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vlootinfo {
+  background-color:rgba(255, 215, 0, 0.85);
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.gridinfo {
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.meerinfo {
+  background-color:rgba(255, 215, 0, 0.85);
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin-bottom: 70px;
+}
+
+.infolink {
+  color: white;
+  text-decoration: none;
+}
+
+.infolink:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.infolink:active {
+  color: black;
+}
+
+/*------------------------------------*/
+
+@media screen and (max-width: 1006px) {
+
+
+#page2 section {
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+#page2 .blockblack {
+  width: 100%;
+  height: auto;
+}
+
+#page2 .blockblack {
+  width: 100%;
+  height: auto;
+}
+.blockyellow {
+  width: 100%;
+  height: auto;
+}
+.blockhobby {
+  width: 100%;
+  height: auto;
+}
+
+.blockblack#pers {
+  background-color:rgba(255, 215, 0, 0.85);
+
+}
+
+.blockblack#pers .persoonlijk{
+  color: black;
+}
+
+.blockyellow#werk .werkervaring{
+  color: white;
+}
+.blockyellow#werk {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+}
+
+
+@media screen and (max-width: 739px) {
+
+  nav {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  ul li a i {
+    padding: 17px 20px 0px 20px;
+  }
+
+  #briefcase {
+  padding-right: 90px;
+}
+
+  .iconx {
+    visibility: visible;
+  }
+
+  .hoverspan:hover #homet{
+    display: none;
+  }
+
+  .hoverspan:hover #overmijt{
+    display: none;
+  }
+
+  .hoverspan:hover #projectt{
+    display: none;
+  }
+
+  .hoverspan:hover #werkt{
+    display: none;
+  }
+
+
+
+.container {
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.container #portf {
+  width: 100%;
+  font-size: 20px;
+  padding: 14px 30px 14px 20px
+
+}
+
+.container #kp {
+  width: 100%;
+  font-size: 20px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 60px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:rgba(255, 255, 255, 0.5); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/*text slideshow*/
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  padding: 5px 0px;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 567px) {
+  #PF {
+    float: none;
+  }
+
+  .plannen {
+    margin-bottom: 70px;
+  }

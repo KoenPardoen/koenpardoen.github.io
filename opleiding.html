@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Koen Pardoen</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/49cd1ca811.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+</head>
+
+<body class="background2">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><span class="hoverspan"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span id="homet">Home page</span></span></a></li>
+        <li><a href="wiebenik.html"><span class="hoverspan"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i><span id="overmijt">Over mij</span></a></li>
+        <li><a href="opleiding.html"><span id="active" class="hoverspan"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i><span id="projectt">School projecten</span></a></li>
+        <li><a href="beroep.html"><span class="hoverspan"><i  id="briefcase" class="fa fa-briefcase fa-2x" aria-hidden="true"></i><span id="werkt"> Werk</span></a></li>
+      </ul>
+    </nav>
+    <div class="iconx" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </header>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/layout.jpg" style="width:100%">
+        <div class="text"><p>Opdracht Layout.</p></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/vloot.jpg" style="width:100%">
+        <div class="text"><p>Opdracht Vloot.</p></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/grid.jpg" style="width:100%">
+        <div class="text"><p>Opdracht grid.</p></div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+      <section class="opdrachtinfo">
+        <article class="layoutinfo">
+          <h1>Opdracht Layout</h1>
+          <p>In deze opdracht was het de bedoeling om een webpagina te maken over jouw hobby. Deze opdracht had natuurlijk een aantal eisen, bijvoorbeeld:
+            gebruik flexbox en houd je aan een bepaalde indeling waarbij je bijv. reclame aan de rechterkant in een aside moest plaatsen. Ook hebben we moeten letten op
+            de layout benaming, dus niet te veel met div's werken.
+          </p>
+        </article>
+
+        <article class="vlootinfo">
+          <h1>Opdracht Vloot</h1>
+          <p>Dit is de opdracht waar ik een aantal foto's van webpagina's precies moesten na maken. Om dit te doen kregen we een bestand met de benodigde foto's.</p>
+        </article>
+
+        <article class="gridinfo">
+          <h1>Opdracht Grid</h1>
+          <p>In deze opdracht was het de bedoeling om doormiddel van het veranderen van een css bestand 2 foto's van webpagina's na te maken, de html kreeg ik kant en klaar. </p>
+        </article>
+
+        <article class="meerinfo">
+          <h1>Meer zien?</h1>
+          <P>Op <a class="infolink" href="https://github.com/koenpardoen" target="_blank">Github</a> staan nog een aantal opdrachten, wees vrij om te kijken.</p>
+        </article>
+
+      </section>
+
+      <footer>
+
+        <a class="footerlink"href="https://www.linkedin.com/in/koen-pardoen" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a class="footerlink"href="https://github.com/koenpardoen" target="_blank"><i class="fa fa-git-square fa-2x" aria-hidden="true"></i></a>
+        <script src="javascript/mobilenav.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="javascript/slideshow.js"></script>
+      </footer>
+</body>
+</html>
